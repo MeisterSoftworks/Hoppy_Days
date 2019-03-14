@@ -12,7 +12,7 @@ position = Vector2( 352.356, 451.303 )
 [node name="Platform" type="StaticBody2D" parent="." index="1"]
 
 editor/display_folded = true
-position = Vector2( 355.198, 800.031 )
+position = Vector2( 355.198, 802.549 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -32,12 +32,12 @@ texture = ExtResource( 2 )
 
 visible = false
 build_mode = 0
-polygon = PoolVector2Array( -190, -30, -180, -50, 180, -50, 190, -40, 190, -10, 160, 30, -160, 50, -190, -10 )
+polygon = PoolVector2Array( -190, -30, -178.492, -47.4447, 181.112, -47.4447, 190, -40, 190, -10, 160, 30, -160, 50, -190, -10 )
 
 [node name="Platform2" type="StaticBody2D" parent="." index="2"]
 
 editor/display_folded = true
-position = Vector2( 894.602, 544.884 )
+position = Vector2( 813.389, 521.844 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -57,12 +57,12 @@ texture = ExtResource( 2 )
 
 visible = false
 build_mode = 0
-polygon = PoolVector2Array( -190, -30, -180, -50, 180, -50, 190, -40, 190, -10, 160, 30, -160, 50, -190, -10 )
+polygon = PoolVector2Array( -190, -30, -178.492, -47.4447, 181.112, -47.4447, 190, -40, 190, -10, 160, 30, -160, 50, -190, -10 )
 
 [node name="Platform3" type="StaticBody2D" parent="." index="3"]
 
 editor/display_folded = true
-position = Vector2( 1360.37, 354.809 )
+position = Vector2( 1338.29, 705.623 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -82,6 +82,6 @@ texture = ExtResource( 2 )
 
 visible = false
 build_mode = 0
-polygon = PoolVector2Array( -190, -30, -180, -50, 180, -50, 190, -40, 190, -10, 160, 30, -160, 50, -190, -10 )
+polygon = PoolVector2Array( -190, -30, -178.492, -47.4447, 181.112, -47.4447, 190, -40, 190, -10, 160, 30, -160, 50, -190, -10 )
 
 
