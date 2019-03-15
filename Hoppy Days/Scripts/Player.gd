@@ -7,6 +7,9 @@ const JUMP_SPD = 1400
 
 var motion = Vector2()
 
+#Input
+
+
 func _process(delta):
 	update_animation(motion)
 
@@ -23,8 +26,8 @@ func update_animation(motion):
 
 func grav_ctrl(delta):
 	#GRAVITY
-	if is_on_floor() && $RayCast2D.is_colliding(): #Accelerate player downward until landed on floor
-		motion.y = 0
+	if is_on_floor() || is_on_ceiling(): #Accelerate player downward until landed on floor
+		motion.y = 10
 	else:
 		motion.y += GRAVITY * delta
 
