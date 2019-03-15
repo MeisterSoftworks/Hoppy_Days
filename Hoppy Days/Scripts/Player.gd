@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 const MOVE_SPD = 750
-const GRAVITY = 2800
+const GRAVITY = 3000
 const UP = Vector2(0,-1)
 const JUMP_SPD = 1400
 

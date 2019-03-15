@@ -11,4 +11,4 @@ func update(motion):
 		play("idle")
 	
 	if motion.x: #If there is an X value in Vector2, call "motion"
-		flip_h = motion.x < 0 #Set flip_h's true/false value to be same as motion.x < 0
+		flip_h = (motion.x < 0) #Set flip_h's true/false value to be same as motion.x < 0
