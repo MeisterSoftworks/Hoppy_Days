@@ -1,17 +1,17 @@
 extends KinematicBody2D
 
 const MOVE_SPD = 750
-const GRAVITY = 3000
+const GRAVITY = 2800
 const UP = Vector2(0,-1)
-const JUMP_SPD = 1400
+const JUMP_SPD = 1500
 
 var motion = Vector2()
-
-#Input
+export var world_limit = 3000
 
 
 func _process(delta):
 	update_animation(motion)
+	quit_game()
 
 func _physics_process(delta):
 	update_motion(delta)
@@ -30,6 +30,10 @@ func grav_ctrl(delta):
 		motion.y = 10
 	else:
 		motion.y += GRAVITY * delta
+		
+		if position.y > world_limit:
+			end_game()
+			pass
 
 func move_ground():
 	var move_right = Input.is_action_pressed("ui_right")
@@ -47,3 +51,10 @@ func move_ground():
 	if jump && is_on_floor():
 		motion.y = -JUMP_SPD
 
+func end_game():
+	get_tree().change_scene("res://Scenes/GameOver.tscn")
+
+func quit_game():
+	if Input.is_action_just_pressed("ui_cancel"):
+		get_tree().quit()
+	

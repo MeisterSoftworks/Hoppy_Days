@@ -5,7 +5,7 @@
 [ext_resource path="res://GFX/Background/bg_layer3.png" type="Texture" id=3]
 [ext_resource path="res://GFX/Background/bg_layer4.png" type="Texture" id=4]
 
-[node name="ParallaxBackground" type="ParallaxBackground" index="0"]
+[node name="ParallaxBackground" type="ParallaxBackground"]
 
 layer = -1
 offset = Vector2( 0, 0 )
@@ -20,7 +20,7 @@ scroll_limit_end = Vector2( 0, 0 )
 scroll_ignore_camera_zoom = true
 _sections_unfolded = [ "Scroll" ]
 
-[node name="PLX_Bkgrd" type="ParallaxLayer" parent="." index="0"]
+[node name="PARA_Bkgrd" type="ParallaxLayer" parent="." index="0"]
 
 editor/display_folded = true
 motion_scale = Vector2( 1, 1 )
@@ -28,12 +28,12 @@ motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 2048, 2048 )
 _sections_unfolded = [ "Motion" ]
 
-[node name="Sprite" type="Sprite" parent="PLX_Bkgrd" index="0"]
+[node name="Sprite" type="Sprite" parent="PARA_Bkgrd" index="0"]
 
 texture = ExtResource( 1 )
 centered = false
 
-[node name="PLX_Clouds" type="ParallaxLayer" parent="." index="1"]
+[node name="PARA_Clouds" type="ParallaxLayer" parent="." index="1"]
 
 editor/display_folded = true
 motion_scale = Vector2( 0.5, 1 )
@@ -41,12 +41,12 @@ motion_offset = Vector2( 0, -750 )
 motion_mirroring = Vector2( 2048, 0 )
 _sections_unfolded = [ "Motion" ]
 
-[node name="Sprite" type="Sprite" parent="PLX_Clouds" index="0"]
+[node name="Sprite" type="Sprite" parent="PARA_Clouds" index="0"]
 
 texture = ExtResource( 2 )
 centered = false
 
-[node name="PLX_BackHills" type="ParallaxLayer" parent="." index="2"]
+[node name="PARA_BackHills" type="ParallaxLayer" parent="." index="2"]
 
 editor/display_folded = true
 motion_scale = Vector2( 1, 1 )
@@ -54,12 +54,12 @@ motion_offset = Vector2( 0, -750 )
 motion_mirroring = Vector2( 2048, 2048 )
 _sections_unfolded = [ "Motion" ]
 
-[node name="Sprite" type="Sprite" parent="PLX_BackHills" index="0"]
+[node name="Sprite" type="Sprite" parent="PARA_BackHills" index="0"]
 
 texture = ExtResource( 3 )
 centered = false
 
-[node name="PLX_FrontHills" type="ParallaxLayer" parent="." index="3"]
+[node name="PARA_FrontHills" type="ParallaxLayer" parent="." index="3"]
 
 editor/display_folded = true
 motion_scale = Vector2( 1, 1 )
@@ -67,7 +67,7 @@ motion_offset = Vector2( 0, -750 )
 motion_mirroring = Vector2( 2048, 0 )
 _sections_unfolded = [ "Motion" ]
 
-[node name="Sprite" type="Sprite" parent="PLX_FrontHills" index="0"]
+[node name="Sprite" type="Sprite" parent="PARA_FrontHills" index="0"]
 
 texture = ExtResource( 4 )
 centered = false
