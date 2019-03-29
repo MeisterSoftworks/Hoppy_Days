@@ -9,7 +9,7 @@
 [ext_resource path="res://GFX/Environment/ground_sand_small.png" type="Texture" id=7]
 [ext_resource path="res://GFX/Environment/ground_snow_small.png" type="Texture" id=8]
 
-[node name="Platforms" type="Node2D"]
+[node name="Platforms" type="Node2D" index="0"]
 
 [node name="Ground_Cake" type="Sprite" parent="." index="0"]
 
@@ -32,7 +32,6 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground_Cake/StaticBody2D" index="0"]
 
-visible = false
 build_mode = 0
 polygon = PoolVector2Array( -190.135, -14.2427, -190, -30, -186.486, -42.4381, -171.891, -47.0821, 175.078, -47.0821, 185.03, -41.443, 190, -30, 190.005, -15.5696, 160.815, 32.8602, 157.829, 35.5139, -159.286, 47.7871 )
 

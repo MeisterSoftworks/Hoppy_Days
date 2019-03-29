@@ -39,17 +39,18 @@ custom_solver_bias = 0.0
 radius = 59.1198
 height = 38.3938
 
-[node name="Player" type="KinematicBody2D" index="0"]
+[node name="Player" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
-collision_mask = 2
+collision_mask = 6
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Transform" ]
 __meta__ = {
 "_edit_group_": true
 }
+world_limit = 3000
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
 
@@ -61,17 +62,8 @@ script = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-visible = false
 position = Vector2( -0.120117, 24.1494 )
 scale = Vector2( 1, 0.979452 )
 shape = SubResource( 2 )
-
-[node name="RayCast2D" type="RayCast2D" parent="." index="2"]
-
-visible = false
-enabled = true
-exclude_parent = true
-cast_to = Vector2( 0, 100.5 )
-collision_mask = 1
 
 
