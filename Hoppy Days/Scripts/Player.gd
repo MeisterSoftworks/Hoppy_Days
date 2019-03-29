@@ -10,7 +10,7 @@ export var world_limit = 3000 #Exports variable to inspector
 
 func _process(delta):
 	update_animation(motion)
-	quit_game()
+	get_parent().quit_game()
 
 func _physics_process(delta):
 	update_motion(delta)
@@ -31,7 +31,7 @@ func grav_ctrl(delta):
 		motion.y += GRAVITY * delta
 		
 	if position.y > world_limit:
-		end_game()
+		get_parent().end_game()
 
 func move_ground():
 	var move_right = Input.is_action_pressed("ui_right")
@@ -48,11 +48,4 @@ func move_ground():
 		#JUMP
 	if jump && is_on_floor():
 		motion.y = -JUMP_SPD
-
-func end_game():
-	get_tree().change_scene("res://Scenes/GameOver.tscn")
-
-func quit_game():
-	if Input.is_action_just_pressed("ui_cancel"):
-		get_tree().quit()
 	
