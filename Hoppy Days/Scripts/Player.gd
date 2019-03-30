@@ -6,14 +6,10 @@ const UP = Vector2(0,-1)
 const jump_spd = 1500
 
 export var world_limit = 3000 #Exports variable to inspector
-export var starting_lives = 3
-
 var motion = Vector2()
-var lives
 
 func _ready():
 	Global.Player = self
-	lives = starting_lives
 
 func _process(delta):
 	update_animation(motion)
@@ -54,16 +50,8 @@ func move_ground():
 	else:
 		motion.x = 0
 	
-		#JUMP
 	if move_jump && is_on_floor():
 		Jump()
 
 func Jump():
 	motion.y = -jump_spd
-
-func hurt():
-	lives -= 1
-	Jump()
-	
-	if lives < 0:
-		Global.GameState.end_game()

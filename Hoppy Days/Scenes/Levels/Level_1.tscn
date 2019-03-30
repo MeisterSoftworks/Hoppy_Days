@@ -7,14 +7,14 @@
 [ext_resource path="res://Scenes/SpikesTop.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/SpikesBottom.tscn" type="PackedScene" id=6]
 
-[node name="Level1" type="Node2D" index="0"]
+[node name="Level1" type="Node2D"]
 
 script = ExtResource( 1 )
+starting_lives = 3
 
 [node name="Player" parent="." index="0" instance=ExtResource( 2 )]
 
 position = Vector2( 352.356, 451.303 )
-starting_lives = 3
 
 [node name="Camera2D" parent="Player" index="2" instance=ExtResource( 3 )]
 
@@ -48,6 +48,8 @@ tile_data = PoolIntArray( -524262, 7, 0, -458711, 3, 0, -262111, 7, 0, -65530, 7
 _sections_unfolded = [ "Collision" ]
 
 [node name="Spikes" type="Node2D" parent="." index="2"]
+
+editor/display_folded = true
 
 [node name="SpikesTop" parent="Spikes" index="0" instance=ExtResource( 5 )]
 
