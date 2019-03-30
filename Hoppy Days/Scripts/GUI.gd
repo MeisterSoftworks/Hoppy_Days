@@ -5,4 +5,4 @@ func _ready():
 
 func update_GUI(lives):
 	$Banner/HBoxContainer/Life/LifeCount.text = "%02d" % lives
-	
+

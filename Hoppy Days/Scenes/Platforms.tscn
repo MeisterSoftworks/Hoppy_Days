@@ -33,7 +33,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground_Cake/StaticBody2D" index="0"]
 
 build_mode = 0
-polygon = PoolVector2Array( -190.135, -14.2427, -190, -30, -186.486, -42.4381, -171.891, -47.0821, 175.078, -47.0821, 185.03, -41.443, 190, -30, 190.005, -15.5696, 160.815, 32.8602, 157.829, 35.5139, -159.286, 47.7871 )
+polygon = PoolVector2Array( -190.135, -14.2427, -190, -30, -189.277, -35.8463, -186.649, -40.5181, -180.517, -45.7739, -175.115, -46.9418, 175.078, -47.0821, 180.965, -45.1899, 185.491, -41.6861, 188.557, -36.8682, 189.871, -33.2184, 190.005, -15.5696, 160.815, 32.8602, 157.829, 35.5139, -159.286, 47.7871 )
 
 [node name="Ground_Grass" type="Sprite" parent="." index="1"]
 
@@ -56,9 +56,9 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground_Grass/StaticBody2D" index="0"]
 
-visible = false
+position = Vector2( -0.201752, 0.039917 )
 build_mode = 0
-polygon = PoolVector2Array( -190.135, -14.2427, -190, -30, -186.486, -42.4381, -171.891, -47.0821, 175.078, -47.0821, 185.03, -41.443, 190, -30, 190.005, -15.5696, 160.815, 32.8602, 157.829, 35.5139, -159.286, 47.7871 )
+polygon = PoolVector2Array( -190.135, -14.2427, -190, -30, -189.277, -35.8463, -186.649, -40.5181, -180.517, -45.7739, -175.115, -46.9418, 175.078, -47.0821, 180.965, -45.1899, 185.491, -41.6861, 188.557, -36.8682, 189.871, -33.2184, 190.005, -15.5696, 160.815, 32.8602, 157.829, 35.5139, -159.286, 47.7871 )
 
 [node name="Ground_Sand" type="Sprite" parent="." index="2"]
 
@@ -81,9 +81,9 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground_Sand/StaticBody2D" index="0"]
 
-visible = false
+position = Vector2( 0.13942, 0.157776 )
 build_mode = 0
-polygon = PoolVector2Array( -190.135, -14.2427, -190, -30, -186.486, -42.4381, -171.891, -47.0821, 175.078, -47.0821, 185.03, -41.443, 190, -30, 190.005, -15.5696, 160.815, 32.8602, 157.829, 35.5139, -159.286, 47.7871 )
+polygon = PoolVector2Array( -190.135, -14.2427, -190, -30, -189.277, -35.8463, -186.649, -40.5181, -180.517, -45.7739, -175.115, -46.9418, 175.078, -47.0821, 180.965, -45.1899, 185.491, -41.6861, 188.557, -36.8682, 189.871, -33.2184, 190.005, -15.5696, 160.815, 32.8602, 157.829, 35.5139, -159.286, 47.7871 )
 
 [node name="Ground_Snow" type="Sprite" parent="." index="3"]
 
@@ -106,9 +106,9 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground_Snow/StaticBody2D" index="0"]
 
-visible = false
+position = Vector2( 0.0353851, 0.0192871 )
 build_mode = 0
-polygon = PoolVector2Array( -190.135, -14.2427, -190, -30, -186.486, -42.4381, -171.891, -47.0821, 175.078, -47.0821, 185.03, -41.443, 190, -30, 190.005, -15.5696, 160.815, 32.8602, 157.829, 35.5139, -159.286, 47.7871 )
+polygon = PoolVector2Array( -190.135, -14.2427, -190, -30, -189.277, -35.8463, -186.649, -40.5181, -180.517, -45.7739, -175.115, -46.9418, 175.078, -47.0821, 180.965, -45.1899, 185.491, -41.6861, 188.557, -36.8682, 189.871, -33.2184, 190.005, -15.5696, 160.815, 32.8602, 157.829, 35.5139, -159.286, 47.7871 )
 
 [node name="Ground_Cake_SM" type="Sprite" parent="." index="4"]
 
@@ -131,7 +131,6 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground_Cake_SM/StaticBody2D" index="0"]
 
-visible = false
 build_mode = 0
 polygon = PoolVector2Array( -99.7702, -17.7722, -98.9557, -38.1348, -94.476, -45.0581, -88.3671, -49.5379, 83.0865, -49.5379, 95.3041, -45.0581, 99.7839, -36.9131, 100.191, -19.8084, 76.5705, 46.1666, 66.7964, 49.0175, -76.9641, 40.4651 )
 
@@ -156,7 +155,6 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground_Grass_SM/StaticBody2D" index="0"]
 
-visible = false
 build_mode = 0
 polygon = PoolVector2Array( -99.7702, -17.7722, -98.9557, -38.1348, -94.476, -45.0581, -88.3671, -49.5379, 83.0865, -49.5379, 95.3041, -45.0581, 99.7839, -36.9131, 100.191, -19.8084, 76.5705, 46.1666, 66.7964, 49.0175, -76.9641, 40.4651 )
 
@@ -181,7 +179,6 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground_Sand_SM2/StaticBody2D" index="0"]
 
-visible = false
 build_mode = 0
 polygon = PoolVector2Array( -99.7702, -17.7722, -98.9557, -38.1348, -94.476, -45.0581, -88.3671, -49.5379, 83.0865, -49.5379, 95.3041, -45.0581, 99.7839, -36.9131, 100.191, -19.8084, 76.5705, 46.1666, 66.7964, 49.0175, -76.9641, 40.4651 )
 
@@ -206,7 +203,6 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground_Snow_SM3/StaticBody2D" index="0"]
 
-visible = false
 build_mode = 0
 polygon = PoolVector2Array( -99.7702, -17.7722, -98.9557, -38.1348, -94.476, -45.0581, -88.3671, -49.5379, 83.0865, -49.5379, 95.3041, -45.0581, 99.7839, -36.9131, 100.191, -19.8084, 76.5705, 46.1666, 66.7964, 49.0175, -76.9641, 40.4651 )
 

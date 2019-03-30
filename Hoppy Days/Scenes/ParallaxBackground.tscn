@@ -29,8 +29,10 @@ _sections_unfolded = [ "Motion" ]
 
 [node name="Sprite" type="Sprite" parent="PARA_Bkgrd" index="0"]
 
+modulate = Color( 1, 0.93515, 0.511719, 1 )
 texture = ExtResource( 1 )
 centered = false
+_sections_unfolded = [ "Visibility" ]
 
 [node name="PARA_Clouds" type="ParallaxLayer" parent="." index="1"]
 
@@ -41,8 +43,10 @@ _sections_unfolded = [ "Motion" ]
 
 [node name="Sprite" type="Sprite" parent="PARA_Clouds" index="0"]
 
+modulate = Color( 0.867188, 0.802402, 0.379395, 1 )
 texture = ExtResource( 2 )
 centered = false
+_sections_unfolded = [ "Visibility" ]
 
 [node name="PARA_BackHills" type="ParallaxLayer" parent="." index="2"]
 
@@ -53,8 +57,10 @@ _sections_unfolded = [ "Motion" ]
 
 [node name="Sprite" type="Sprite" parent="PARA_BackHills" index="0"]
 
+modulate = Color( 0.804688, 0.729543, 0.238892, 1 )
 texture = ExtResource( 3 )
 centered = false
+_sections_unfolded = [ "Visibility" ]
 
 [node name="PARA_FrontHills" type="ParallaxLayer" parent="." index="3"]
 
@@ -65,7 +71,9 @@ _sections_unfolded = [ "Motion" ]
 
 [node name="Sprite" type="Sprite" parent="PARA_FrontHills" index="0"]
 
+modulate = Color( 0.660156, 0.614948, 0.319763, 1 )
 texture = ExtResource( 4 )
 centered = false
+_sections_unfolded = [ "Visibility" ]
 
 
