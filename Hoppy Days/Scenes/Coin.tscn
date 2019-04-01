@@ -59,8 +59,7 @@ tracks/1/keys = {
 
 frames = SubResource( 1 )
 animation = "default"
-frame = 5
-playing = true
+frame = 3
 script = ExtResource( 7 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
