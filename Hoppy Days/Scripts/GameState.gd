@@ -14,6 +14,10 @@ func _ready():
 	
 	update_GUI()
 
+func _process(delta):
+	if Input.is_action_just_pressed("ui_cancel"):
+		get_tree().quit()
+
 func update_GUI():
 	GUI.update_GUI(coins, lives)
 
@@ -25,7 +29,7 @@ func hurt():
 	update_GUI()
 	animate_GUI("Hurt")
 	Global.Player.Jump()
-	
+	Global.SFX_Pain.play()
 	if lives < 0:
 		end_game()
 
@@ -33,8 +37,8 @@ func coin_up():
 	coins += 1
 	update_GUI()
 	animate_GUI("CoinPulse")
-	var multiple_of_coin_target = (coins % coin_goal) == 0
 	
+	var multiple_of_coin_target = (coins % coin_goal) == 0
 	if multiple_of_coin_target:
 		life_up()
 

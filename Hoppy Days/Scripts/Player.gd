@@ -14,8 +14,6 @@ func _ready():
 func _process(delta):
 	update_animation(motion)
 	
-	if Input.is_action_just_pressed("ui_cancel"):
-		get_tree().quit()
 
 func _physics_process(delta):
 	update_motion(delta)
@@ -52,6 +50,7 @@ func move_ground():
 	
 	if move_jump && is_on_floor():
 		Jump()
+		Global.SFX_Jump.play()
 
 func Jump():
 	motion.y = -jump_spd

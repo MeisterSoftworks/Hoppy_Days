@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Scripts/GameState.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -7,8 +7,13 @@
 [ext_resource path="res://Scenes/SpikesTop.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/SpikesBottom.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Coin.tscn" type="PackedScene" id=7]
+[ext_resource path="res://SFX/Summer_Park.ogg" type="AudioStream" id=8]
+[ext_resource path="res://SFX/jump1.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Scripts/SFX_Jump.gd" type="Script" id=10]
+[ext_resource path="res://SFX/pain.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Scripts/SFX_Pain.gd" type="Script" id=12]
 
-[node name="Level1" type="Node2D"]
+[node name="Level1" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 starting_lives = 3
@@ -51,6 +56,8 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="Spikes" type="Node2D" parent="." index="2"]
 
+editor/display_folded = true
+
 [node name="SpikesTop7" parent="Spikes" index="0" instance=ExtResource( 5 )]
 
 position = Vector2( 2592.82, -434.476 )
@@ -92,6 +99,8 @@ position = Vector2( 3486.93, 155.991 )
 position = Vector2( 1499.91, -352.386 )
 
 [node name="Coins" type="Node2D" parent="." index="3"]
+
+editor/display_folded = true
 
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 7 )]
 
@@ -218,6 +227,37 @@ playing = true
 position = Vector2( 1502.1, -583.094 )
 frame = 2
 playing = true
+
+[node name="Sounds" type="Node2D" parent="." index="4"]
+
+[node name="Music" type="AudioStreamPlayer" parent="Sounds" index="0"]
+
+stream = ExtResource( 8 )
+volume_db = -15.0
+pitch_scale = 1.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+[node name="SFX_Jump" type="AudioStreamPlayer" parent="Sounds" index="1"]
+
+stream = ExtResource( 9 )
+volume_db = -10.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+script = ExtResource( 10 )
+
+[node name="SFX_Pain" type="AudioStreamPlayer" parent="Sounds" index="2"]
+
+stream = ExtResource( 11 )
+volume_db = -5.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+script = ExtResource( 12 )
 
 [connection signal="body_entered" from="Spikes/SpikesBottom2" to="Spikes/SpikesBottom2" method="_on_SpikesTop_body_entered"]
 
