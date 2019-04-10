@@ -1,4 +1,4 @@
 extends AudioStreamPlayer
 
 func _ready():
-	Global.SFX_Coin = self
+	Global.SFX_extraLife = self

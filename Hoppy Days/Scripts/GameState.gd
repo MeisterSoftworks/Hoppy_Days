@@ -41,6 +41,7 @@ func coin_up():
 	var multiple_of_coin_target = (coins % coin_goal) == 0
 	if multiple_of_coin_target:
 		life_up()
+		Global.SFX_extraLife.play()
 
 func life_up():
 	lives += 1

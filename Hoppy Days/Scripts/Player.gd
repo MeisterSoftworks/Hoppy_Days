@@ -1,9 +1,10 @@
 extends KinematicBody2D
 
-const move_spd = 750
+const MOVE_SPD = 750
 const Gravity = 2800
 const UP = Vector2(0,-1)
-const jump_spd = 1500
+const JUMP_SPEED = 1500
+const JUMP_BOOST = 2
 
 export var world_limit = 3000 #Exports variable to inspector
 var motion = Vector2()
@@ -42,9 +43,9 @@ func move_ground():
 	var move_jump = Input.is_action_just_pressed("ui_up")
 	
 	if move_right && !move_left:
-		motion.x = move_spd
+		motion.x = MOVE_SPD
 	elif move_left && !move_right:
-		motion.x = -move_spd
+		motion.x = -MOVE_SPD
 	else:
 		motion.x = 0
 	
@@ -53,4 +54,7 @@ func move_ground():
 		Global.SFX_Jump.play()
 
 func Jump():
-	motion.y = -jump_spd
+	motion.y = -JUMP_SPEED
+
+func boost():
+	motion.y = -JUMP_SPEED * JUMP_BOOST
