@@ -30,7 +30,7 @@ func update_animation(motion):
 func grav_ctrl(delta):
 	#Gravity
 	if is_on_floor() || is_on_ceiling(): #Accelerate player downward until landed on floor
-		motion.y = 10
+		motion.y = 0
 	else:
 		motion.y += Gravity * delta
 		
