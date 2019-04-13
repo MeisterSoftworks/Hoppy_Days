@@ -76,7 +76,6 @@ __meta__ = {
 
 [node name="Area2D" type="Area2D" parent="." index="0"]
 
-position = Vector2( 100, 0 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0

@@ -108,8 +108,6 @@ position = Vector2( 1499.91, -352.386 )
 
 [node name="Coins" type="Node2D" parent="." index="3"]
 
-editor/display_folded = true
-
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 7 )]
 
 position = Vector2( 1248.58, 462.672 )
