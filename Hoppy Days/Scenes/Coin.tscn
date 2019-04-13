@@ -6,8 +6,9 @@
 [ext_resource path="res://GFX/Items/bronze_4.png" type="Texture" id=4]
 [ext_resource path="res://GFX/Items/bronze_5.png" type="Texture" id=5]
 [ext_resource path="res://GFX/Items/bronze_6.png" type="Texture" id=6]
-[ext_resource path="res://Scripts/Coin.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/SFX_Coin.gd" type="Script" id=7]
 [ext_resource path="res://SFX/coin_SFX.wav" type="AudioStream" id=8]
+
 
 [sub_resource type="SpriteFrames" id=1]
 
