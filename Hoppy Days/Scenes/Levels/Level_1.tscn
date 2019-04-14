@@ -19,7 +19,7 @@
 [ext_resource path="res://Scenes/Cloud.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Scenes/Portal.tscn" type="PackedScene" id=18]
 
-[node name="Level1" type="Node2D" index="0"]
+[node name="Level1" type="Node2D"]
 
 script = ExtResource( 1 )
 starting_lives = 3
@@ -57,15 +57,13 @@ collision_layer = 2
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( -524262, 7, 0, -458711, 3, 0, -262111, 7, 0, -65530, 7, 0, 57, 3, 0, 131109, 7, 0, 196622, 3, 0, 196655, 3, 0, 655402, 3, 0, 655423, 7, 0, 720904, 7, 0, 851990, 7, 0, 851997, 3, 0, 917555, 3, 0, 1048590, 3, 0 )
+tile_data = PoolIntArray( -524262, 7, 0, -458711, 3, 0, -262111, 7, 0, -65530, 7, 0, 57, 3, 0, 65561, 3, 0, 131109, 7, 0, 196622, 3, 0, 196655, 3, 0, 655402, 3, 0, 655423, 7, 0, 720904, 7, 0, 851990, 7, 0, 851997, 3, 0, 917555, 3, 0, 1048590, 3, 0 )
 _sections_unfolded = [ "Collision" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="Spikes" type="Node2D" parent="." index="2"]
-
-editor/display_folded = true
 
 [node name="SpikesTop7" parent="Spikes" index="0" instance=ExtResource( 5 )]
 
@@ -79,35 +77,31 @@ position = Vector2( 2942.68, 205.609 )
 
 position = Vector2( 3704.58, 13.1096 )
 
-[node name="SpikesTop3" parent="Spikes" index="3" instance=ExtResource( 5 )]
-
-position = Vector2( 711.631, 205.492 )
-
-[node name="SpikesTop4" parent="Spikes" index="4" instance=ExtResource( 5 )]
+[node name="SpikesTop4" parent="Spikes" index="3" instance=ExtResource( 5 )]
 
 position = Vector2( 3221.24, 909.723 )
 
-[node name="SpikesBottom" parent="Spikes" index="5" instance=ExtResource( 6 )]
+[node name="SpikesBottom" parent="Spikes" index="4" instance=ExtResource( 6 )]
 
 position = Vector2( 809.102, 344.289 )
 
-[node name="SpikesBottom2" parent="Spikes" index="6" instance=ExtResource( 6 )]
+[node name="SpikesBottom2" parent="Spikes" index="5" instance=ExtResource( 6 )]
 
 position = Vector2( 2829.18, 351.73 )
 
-[node name="SpikesBottom3" parent="Spikes" index="7" instance=ExtResource( 6 )]
+[node name="SpikesBottom3" parent="Spikes" index="6" instance=ExtResource( 6 )]
 
 position = Vector2( 2927.07, 345.259 )
 
-[node name="SpikesBottom4" parent="Spikes" index="8" instance=ExtResource( 6 )]
+[node name="SpikesBottom4" parent="Spikes" index="7" instance=ExtResource( 6 )]
 
 position = Vector2( 3042.87, 342.015 )
 
-[node name="SpikesBottom5" parent="Spikes" index="9" instance=ExtResource( 6 )]
+[node name="SpikesBottom5" parent="Spikes" index="8" instance=ExtResource( 6 )]
 
 position = Vector2( 3486.93, 155.991 )
 
-[node name="SpikesBottom7" parent="Spikes" index="10" instance=ExtResource( 6 )]
+[node name="SpikesBottom7" parent="Spikes" index="9" instance=ExtResource( 6 )]
 
 position = Vector2( 1499.91, -352.386 )
 
@@ -286,93 +280,105 @@ position = Vector2( 216.695, -220.705 )
 frame = 5
 playing = true
 
-[node name="Coin44" parent="Coins" index="30" instance=ExtResource( 7 )]
+[node name="Coin47" parent="Coins" index="30" instance=ExtResource( 7 )]
+
+position = Vector2( 1462.98, -18.0384 )
+frame = 5
+playing = true
+
+[node name="Coin48" parent="Coins" index="31" instance=ExtResource( 7 )]
+
+position = Vector2( 1621.38, -15.7088 )
+frame = 4
+playing = true
+
+[node name="Coin44" parent="Coins" index="32" instance=ExtResource( 7 )]
 
 position = Vector2( 714.86, 935.658 )
 frame = 5
 playing = true
 
-[node name="Coin33" parent="Coins" index="31" instance=ExtResource( 7 )]
+[node name="Coin33" parent="Coins" index="33" instance=ExtResource( 7 )]
 
 position = Vector2( 261.073, -347.179 )
 frame = 5
 playing = true
 
-[node name="Coin46" parent="Coins" index="32" instance=ExtResource( 7 )]
+[node name="Coin46" parent="Coins" index="34" instance=ExtResource( 7 )]
 
 position = Vector2( 844.417, 935.661 )
 frame = 5
 playing = true
 
-[node name="Coin34" parent="Coins" index="33" instance=ExtResource( 7 )]
+[node name="Coin34" parent="Coins" index="35" instance=ExtResource( 7 )]
 
 position = Vector2( 217.948, -490.717 )
 frame = 4
 playing = true
 
-[node name="Coin45" parent="Coins" index="34" instance=ExtResource( 7 )]
+[node name="Coin45" parent="Coins" index="36" instance=ExtResource( 7 )]
 
 position = Vector2( 963.905, 931.506 )
 frame = 4
 playing = true
 
-[node name="Coin35" parent="Coins" index="35" instance=ExtResource( 7 )]
+[node name="Coin35" parent="Coins" index="37" instance=ExtResource( 7 )]
 
 position = Vector2( 194.718, -627.131 )
 frame = 4
 playing = true
 
-[node name="Coin36" parent="Coins" index="36" instance=ExtResource( 7 )]
+[node name="Coin36" parent="Coins" index="38" instance=ExtResource( 7 )]
 
 position = Vector2( 243.021, -753.136 )
 frame = 4
 playing = true
 
-[node name="Coin37" parent="Coins" index="37" instance=ExtResource( 7 )]
+[node name="Coin37" parent="Coins" index="39" instance=ExtResource( 7 )]
 
 position = Vector2( 287.171, -883.483 )
 playing = true
 
-[node name="Coin38" parent="Coins" index="38" instance=ExtResource( 7 )]
+[node name="Coin38" parent="Coins" index="40" instance=ExtResource( 7 )]
 
 position = Vector2( 383.88, -980.192 )
 playing = true
 
-[node name="Coin39" parent="Coins" index="39" instance=ExtResource( 7 )]
+[node name="Coin39" parent="Coins" index="41" instance=ExtResource( 7 )]
 
 position = Vector2( 505.817, -1024.34 )
 playing = true
 
-[node name="Coin40" parent="Coins" index="40" instance=ExtResource( 7 )]
+[node name="Coin40" parent="Coins" index="42" instance=ExtResource( 7 )]
 
 position = Vector2( 638.267, -992.806 )
 playing = true
 
-[node name="Coin41" parent="Coins" index="41" instance=ExtResource( 7 )]
+[node name="Coin41" parent="Coins" index="43" instance=ExtResource( 7 )]
 
 position = Vector2( 745.488, -896.097 )
 frame = 2
 playing = true
 
-[node name="Coin43" parent="Coins" index="42" instance=ExtResource( 7 )]
+[node name="Coin43" parent="Coins" index="44" instance=ExtResource( 7 )]
 
 position = Vector2( 800.149, -641.71 )
 frame = 2
 playing = true
 
-[node name="Coin42" parent="Coins" index="43" instance=ExtResource( 7 )]
+[node name="Coin42" parent="Coins" index="45" instance=ExtResource( 7 )]
 
 position = Vector2( 798.047, -780.466 )
 frame = 1
 playing = true
 
-[node name="Coin12" parent="Coins" index="44" instance=ExtResource( 7 )]
+[node name="Coin12" parent="Coins" index="46" instance=ExtResource( 7 )]
 
 position = Vector2( 2139.88, -342.853 )
 frame = 0
 playing = true
 
-[node name="Coin28" parent="Coins" index="45" instance=ExtResource( 7 )]
+[node name="Coin28" parent="Coins" index="47" instance=ExtResource( 7 )]
 
 position = Vector2( 2185.64, -102.612 )
 frame = 5

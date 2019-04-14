@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 const MOVE_SPD = 750
-const Gravity = 2800
+const GRAVITY = 2800
 const UP = Vector2(0,-1)
 const JUMP_SPEED = 1500
 const JUMP_BOOST = 2
@@ -20,22 +20,26 @@ func _physics_process(delta):
 	update_motion(delta)
 
 func update_motion(delta):
-	grav_ctrl(delta)
+	grav_ctrl(delta) #fall
 	move_ground()
 	motion = move_and_slide(motion, UP) #Stops "motion.y" buildup
 
 func update_animation(motion):
 	$AnimatedSprite.update(motion)
 
-func grav_ctrl(delta):
-	#Gravity
-	if is_on_floor() || is_on_ceiling(): #Accelerate player downward until landed on floor
-		motion.y = 10
+func grav_ctrl(delta): #fall
+	#GRAVITY
+	if is_on_ceiling(): #Accelerate player downward until landed on floor
+		motion.y = 5
+	elif motion.y > -JUMP_SPEED * JUMP_BOOST && is_on_floor():
+		motion.y = 5 
 	else:
-		motion.y += Gravity * delta
+		motion.y += GRAVITY * delta
 		
 	if position.y > world_limit:
 		Global.GameState.end_game()
+	
+	motion.y = clamp(motion.y, (-JUMP_SPEED * JUMP_BOOST), JUMP_SPEED)
 
 func move_ground():
 	var move_right = Input.is_action_pressed("ui_right")
