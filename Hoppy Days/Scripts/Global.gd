@@ -11,4 +11,5 @@ var SFX_extraLife
 #Scene Locations - Must be set MANUALLY
 var Level_1 = "res://Scenes/Levels/Level_1.tscn"
 var GameOver = "res://Scenes/Levels/GameOver.tscn"
+var Victory = "res://Scenes/Levels/Victory.tscn"
 var Lightning = "res://Scenes/Lightning.tscn"
